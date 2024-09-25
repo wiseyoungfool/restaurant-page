@@ -4,7 +4,10 @@ export default function about() {
     content.innerHTML = "";
 
     content.innerHTML = `
-    <h1>About</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat, tellus sit amet ultrices porttitor, ex ex aliquet purus, pellentesque rhoncus felis ipsum nec purus. Donec id enim in risus pellentesque blandit. Proin sed nibh nec arcu mollis rhoncus in sit amet augue. Suspendisse magna nisl, eleifend non tempor et, luctus id quam. Nulla bibendum vulputate ante, non malesuada eros lobortis euismod</p>
-    <h4>123-456-7890</h4>`
+    <div class="about">
+        <h1>About</h1>
+        <p>Founded in 3000 B.C. Benny's Dine and Dash has been serving terrified customers for over 5000 years. We delight in our ability cause the entire lives of our customers to flash before their eyes while they down the most disgusting food imaginable that we overcharge them egrigiously for. "It's for the experience!", they say, sweat gushing out of their pores while covered in blood and maimed from the waist down. "There's nothing like it!"</p>
+        <p>Call today and book your reservation!</p>
+        <h4>123-456-7890</h4>
+    </div>`
 }

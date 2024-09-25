@@ -6,9 +6,9 @@ import menu from "./menu.js";
 console.log("initialize...");
 
 document.addEventListener("DOMContentLoaded", () => {
-    const homeButton = document.getElementById('home');
-    const menuButton = document.getElementById('menu');
-    const aboutButton = document.getElementById('about');
+    const homeButton = document.querySelector('.home-btn');
+    const menuButton = document.querySelector('.menu-btn');
+    const aboutButton = document.querySelector('.about-btn');
 
     home();
 

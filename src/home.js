@@ -1,4 +1,5 @@
 // greeting.js
+import menu from './menu.js';
 
 export default function initHome() {
     console.log("Entering Home Page");
@@ -15,4 +16,11 @@ export default function initHome() {
     
     about.textContent = "Welcome to Benny's Dine and Dash! Do you want to be chased by lions and wolves while enjoying a delicious meal? Then order today!"
     content.appendChild(about);
+
+    const viewMenu = document.createElement("button");
+    viewMenu.classList.add("menu-view-btn");
+    viewMenu.textContent="View Menu";
+    content.appendChild(viewMenu);
+
+    viewMenu.addEventListener("click", menu);
 }

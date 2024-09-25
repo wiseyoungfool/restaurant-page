@@ -1,3 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Montserrat:wght@300;400;700&display=swap");
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    font-family: "Montserrat", sans-serif;
+}
+
 body {
-    background-color: rebeccapurple;
-  }
+    display: flex;
+    flex-direction: column;
+    background: url("img/restaurant-bg.jpg");
+    color: white;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+}
+
+header h1 {
+    font-family: "Herr Von Muellerhoff", cursive;
+    font-size: 96px;
+    margin: 0px;
+    padding: 0px;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+}
+
+.logo {
+    text-align: center;
+    background-color: black;
+    padding: 30px;
+    min-width: 500px;
+}
+
+nav {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.menu {
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    justify-content: center;
+}
+
+.menu-item {
+    justify-items: center;
+    background-color: black;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    transition: background-color 0.3s;
+    transition: font-size 0.3s;
+    min-height: 260px;
+}
+
+.menu-item:hover {
+    background-color: orangered;
+    cursor: pointer;
+    font-size: larger;
+}
+
+.about {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+#content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#content * {
+    max-width: 500px;
+}
+
+button {
+    cursor: pointer;
+    background-color: orange;
+    border-radius: 0px;
+    border: 0px solid orange;
+    transition: background-color 0.3s;
+    padding: 30px;
+    margin: 30px;
+    font-size: 24px;
+    width: 200px;
+}
+
+button:hover {
+    background-color: orangered;
+}
